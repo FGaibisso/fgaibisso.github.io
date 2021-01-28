@@ -2,27 +2,65 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    box-sizing: border-box;
+    box-sizing: inherit;
+}
+
+link{
+    width: 30px;
 }
 
 body {
     margin: 0px auto;
     background-color: black;
-    color: white;
 }
-div ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+
+section{
+    display: block;
 }
-div ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+
+.row{
+    max-width: 68.5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.logo h1 {
+font-size: .75rem;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+-webkit-font-smoothing: subpixel-antialiased;
+color: white;
+position: absolute;
+top: 30px;
+left: 90px;
+letter-spacing: .4em;
+text-transform: uppercase;
+z-index: 10;
+opacity: .85;
+}
+
+h1{
+font-weight: normal;
+font-style: normal;
+color: inherit;
+text-rendering: optimizeLegibility;
+margin-top: 0;
+margin-bottom: 0.5rem;
+line-height: 1.4;
+}
+
+.logo h1 span {
+    text-transform: none;
+    letter-spacing: .2em;
+    opacity: .7;
+    -webkit-font-smoothing: initial;
+    -moz-osx-font-smoothing: initial;
+}
+
 a {
     text-decoration: none;
     color: white;
+    cursor: pointer;
+    line-height: inherit;
 }
 a:hover {
     text-decoration: none;
@@ -34,15 +72,36 @@ footer {
 }
 
 .foto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 50px;
+    width: 100%;
+    text-align: left;
 }
 
-.foto img {
-    border-radius: 50%;
-    width: 200px;
-    max-width: 50%;
-    border: 2px solid white;
+.foto img{
+    position: fixed;
+    height: 100%;
+    z-index: 1;
+    width: 50%;
+}
+
+.about {
+    float:right;
+}
+
+.about-text {
+    color: white;
+    background-color: #252525;
+    background-image: url(../img/pat.png);
+    background-blend-mode: multiply;
+    padding: 5em 3.2em;
+}
+
+div ul, footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+div ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
 }
